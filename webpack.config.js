@@ -2,9 +2,9 @@ module.exports = {
   mode: "production",
   entry: "./index.js",
   output: {
-    filename: "abi-decoder.js",
+    filename: "abi-decoder2.js",
     libraryTarget: "var",
-    library: "abiDecoder",
+    library: "abiDecoder2",
   },
   module: {
     rules: [
