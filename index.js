@@ -6,6 +6,11 @@ const state = {
   methodIDs: {},
 };
 
+function _removeAllABIs() {
+  state.savedABIs = [];
+  state.methodIDs = {};
+}
+
 function _getABIs() {
   return state.savedABIs;
 }
@@ -205,6 +210,7 @@ function _decodeLogs(logs) {
 }
 
 module.exports = {
+  removeAllABIs: _removeAllABIs,
   getABIs: _getABIs,
   addABI: _addABI,
   getMethodIDs: _getMethodIDs,
